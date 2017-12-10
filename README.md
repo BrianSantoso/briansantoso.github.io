@@ -1,2 +1,2 @@
 # WebsiteTemplate
-A Website Template With Responsive Design
+An elegant website template with responsive web design
