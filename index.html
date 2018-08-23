@@ -23,14 +23,9 @@
             
         </header>
         
+        <div id="navbarSubstitute" class="col-xs-12"></div>
+        
         <nav id="nav" class="navbar navbar-expand-md navbar-light bg-faded">
-            
-<!--
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Example Website</a>
-            </div>
--->
-<!--            <a class="navbar-brand" href="#">Example Website</a>-->
             
             <div class="col-xs-4">
                 <button class="navbar-toggler delete-border" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +44,7 @@
             <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
                 <div class="center">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">page one</a></li>
+                      <li class="active"><a href="#">projects</a></li>
                       <li><a href="#">page two</a></li>
                       <li><a href="#">page three</a></li>
                       <li><a href="#">page four</a></li>
@@ -60,82 +55,60 @@
         </nav>
         
         
+<!--        <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/yz6dNf7X7SA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
         
+        <!-- Spacer -->
+        <div class="col-xs-12" style="height:40px;"></div>
         
-        
-        <div class="container-fluid">
-            
+        <div class="container">
             <div class="row">
-                <div class="sicon">
-
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-                        <div class="icon-circle">
-                            <a href="#" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        </div>
-                    </div>
-                    
-<!--                    <div class="col-xs-12" style="height:20px;"></div>-->
-
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-                        <div class="icon-circle">
-                            <a href="#" class="itwittter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    
-<!--                    <div class="col-xs-12" style="height:20px;"></div>-->
-
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-                        <div class="icon-circle">
-                            <a href="#" class="igoogle" title="Google+"><i class="fa fa-google-plus"></i></a>
-                        </div>
-                    </div>
-                    
-<!--                    <div class="col-xs-12" style="height:20px;"></div>-->
-
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-                        <div class="icon-circle">
-                            <a href="#" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-
+                <div class="col-sm-2">
+                    <div class="ratio img-responsive img-circle" style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg); width: 128px; height: 128px;"></div>
+                    <!-- https://codepen.io/ThibaultG4U/pen/kXVZqm-->
                 </div>
+
             </div>
-            
-<!--            <img class="center" src="images/remadeFloor3.PNG" />-->
-<!--            <img class="center" src="images/pexels-photo-355296.jpeg" />-->
         </div>
+
+        <div class="col-xs-12" style="height:600px;"></div>
         
         
-        
-        <div class="col-xs-12" style="height:1200px;"></div>
         
         
         <footer class="text-center">
             
-            <p class="copyright">COPYRIGHT © 2017</p>
             
+            <p class="copyright">COPYRIGHT © 2018</p>  
         </footer>
-        
-        
-        
         
         
         
          <script>
         
-            window.onscroll = function() {
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            if (window.pageYOffset >= sticky) {
-//                navbar.classList.add("fixed-top")
-                navbar.classList.add("sticky-header")
-            } else {
-//                navbar.classList.remove("fixed-top");
-                navbar.classList.remove("sticky-header");
-            }};
-            // Get the navbar
-            var navbar = document.getElementById("nav");
-            // Get the offset position of the navbar
-            var sticky = navbar.offsetTop;
+    navbar = document.getElementById("nav");
+    // navbarSubstitute is a substitute for the navbar's height
+    // when it gets stickied, stopping the sudden jump
+    navbarSubstitute = document.getElementById("navbarSubstitute")
+    navbarSubstitute.style.height = 0;
+    navbarSubstituteHeight = navbar.offsetHeight
+
+
+    window.onscroll = function() {
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        if (window.pageYOffset >= sticky) {
+            //navbar.classList.add("fixed-top")
+            navbar.classList.add("sticky-header");
+            navbarSubstitute.style.height = navbarSubstituteHeight + "px"
+        } else {
+            //navbar.classList.remove("fixed-top");
+            navbar.classList.remove("sticky-header");
+            navbarSubstitute.style.height = 0
+        }
+    };
+    // Get the navbar
+    var navbar = document.getElementById("nav");
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
 
            
         
