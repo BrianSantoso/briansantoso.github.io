@@ -3,10 +3,12 @@
 <html>
 
     <head>
-        <title>Example Website</title>
+        <title>Example</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
@@ -18,7 +20,7 @@
         <header class="container text-center">
             
             <div class="header-logo d-none d-md-block">
-                <a href="#" class="d-none d-md-block">Example</a>
+                <a href="#" class="d-none d-md-block">Brian Santoso</a>
             </div>  
             
         </header>
@@ -47,10 +49,11 @@
             <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
                 <div class="center">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">about</a></li>
-                      <li><a href="#">projects</a></li>
-                      <li><a href="#">resume</a></li>
-                      <li><a href="#">contact</a></li>
+                        <li class="active"><a href="#">about</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">education</a></li>
+                        <li><a href="#">skills</a></li>
+                        <li><a href="#">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,22 +64,37 @@
 <!--        <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/yz6dNf7X7SA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
         
         <!-- Spacer -->
-        <div class="col-xs-12" style="height:40px;"></div>
+        <div class="col-xs-12" style="height:44px;"></div>
         <!-- https://codepen.io/ThibaultG4U/pen/kXVZqm-->
         <!-- https://codepen.io/edge0703/pen/iHJuA-->
+        <!-- https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg -->
         <div class="myBanner">
-            <div style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg); width: 160px; height: 160px; margin: 0px 30px 0px 0px;" class="ratio img-responsive img-circle inlineBlock verticalAlignMiddle"></div>
+            
+            <div style="background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg); width: 160px; height: 160px; margin: 0px 30px 0px 0px;" class="ratio img-responsive img-circle inlineBlock verticalAlignMiddle"></div>
             <div class="inlineBlock verticalAlignMiddle textAlignLeft col-6">
-                <div class="animated1s fadeInDown">
-                    Hi! I'm a senior at Newbury Park High School and I love Deep Learning and Computer Graphics. My favorite color is white. Hi! I'm a senior at Newbury Park High School and I love deep learning and computer graphics. My favorite color is white.
+                <div class="animatedFadeIn fadeInDown">
+                    <span class="text">
+                        Hi! I'm a senior at Newbury Park High School and I love Deep Learning, Computer Graphics, Art, Software Engineering, Math, and CS theory. I'm looking to do research in machine learning. My favorite animal is the sheep because it goes baaah.
+                    </span>
                 </div>
             </div>
         </div>
+<!--        Skills: Python Tensorflow Java JavaScript WebGL Threejs Bootstrap HTML CSS git-->
+        
+        <div class="horizontalLine"></div>
         
         <div class="col-xs-12" style="height:1200px;"></div>
         
         
         
+        <div class="contact content-body">
+            <form method="POST" action="https://formspree.io/btsantoso@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website">
+                <input type="email" name="_replyto" placeholder="Your email" required="">
+                <textarea name="message" placeholder="Your message" required=""></textarea>
+                <button type="submit">Send</button>
+            </form>
+          </div>
         
         <footer class="text-center">
             <p class="copyright">COPYRIGHT © 2018</p>  
@@ -86,12 +104,13 @@
         
          <script>
         
-            navbar = document.getElementById("nav");
+            const navbar = document.getElementById("nav")
+            const sticky = navbar.offsetTop; // Get the offset position of the navbar
             // navbarSubstitute is a substitute for the navbar's height
             // when it gets stickied, stopping the sudden jump
-            navbarSubstitute = document.getElementById("navbarSubstitute")
+            const navbarSubstitute = document.getElementById("navbarSubstitute")
             navbarSubstitute.style.height = 0;
-            navbarSubstituteHeight = navbar.offsetHeight
+            const navbarSubstituteHeight = navbar.offsetHeight
 
 
             window.onscroll = function() {
@@ -106,12 +125,8 @@
                     navbarSubstitute.style.height = 0
                 }
             };
-            // Get the navbar
-            var navbar = document.getElementById("nav");
-            // Get the offset position of the navbar
-            var sticky = navbar.offsetTop;
-
-           
+            
+            
         
         </script>
         

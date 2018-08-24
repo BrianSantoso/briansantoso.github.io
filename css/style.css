@@ -361,7 +361,9 @@ footer p {
 
 .myBanner {
     
-/*    background-color: #EDEDEE;*/
+/*    background-color: #74e8d3;*/
+    background-color: #EDEDEE;
+/*    background-color: #ff8581 ;*/
     width: 100%;
 /*    height: auto;*/
 /*    height: 600px;*/
@@ -386,8 +388,8 @@ footer p {
 }
 */
 
-.animated1s {
-    background-image: url(/css/images/logo.png);
+.animatedFadeIn {
+/*    background-image: url(/css/images/logo.png);*/
     background-repeat: no-repeat;
     background-position: left top;
     -webkit-animation-duration: 1s;
@@ -422,3 +424,28 @@ footer p {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
  }
+
+.text {
+/*    font-family: 'Source Sans Pro';*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: ##212529;
+    
+}
+
+.textInverted {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #eeeeee;
+    
+}
+
+.horizontalLine {
+    width: 65%;
+    margin: 44px auto;
+    border-top: 2px solid #f7f7f7;
+    border-top-color: rgb(221, 221, 221);
+}
+
+
