@@ -1,2 +1,3 @@
-# WebsiteTemplate
-An elegant website template with responsive web design
+# Personal Website
+
+Check it out! https://briansantoso.github.io/
