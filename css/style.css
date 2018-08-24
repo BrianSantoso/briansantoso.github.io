@@ -8,7 +8,8 @@ body {
 
 .header-logo {
     
-    font-family: 'News Cycle', sans-serif;
+/*    font-family: 'News Cycle', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
     color: #3f3f3f;
     font-weight: 700;
     letter-spacing: 4px;
@@ -446,6 +447,20 @@ footer p {
     margin: 44px auto;
     border-top: 2px solid #f7f7f7;
     border-top-color: rgb(221, 221, 221);
+}
+
+.sectionHeader {
+    display: block;
+/*    font-family: 'News Cycle', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    color: #3f3f3f;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.pink {
+    background-color: #E44332;
 }
 
 
