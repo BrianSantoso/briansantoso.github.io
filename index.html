@@ -3,6 +3,7 @@
 <html>
 
     <head>
+<!--        TODO: Make navbar selection change depending on section you are in-->
         <title>Brian Santoso</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
@@ -50,7 +51,7 @@
                 <div class="center">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">about</a></li>
-                        <li><a href="#">projects</a></li>
+                        <li><a href="#projects">projects</a></li>
                         <li><a href="#">education</a></li>
                         <li><a href="#">skills</a></li>
                         <li><a href="#">contact</a></li>
@@ -64,10 +65,12 @@
 <!--        <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/yz6dNf7X7SA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
         
         <!-- Spacer -->
-        <div class="col-xs-12" style="height:44px;"></div>
+        <div id="about"></div>
+        <div class="col-xs-12" style="height:24px;"></div>
         <!-- https://codepen.io/ThibaultG4U/pen/kXVZqm-->
         <!-- https://codepen.io/edge0703/pen/iHJuA-->
         <!-- https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg -->
+        
         <div class="myBanner">
             
             <div style="background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg); width: 160px; height: 160px; margin: 0px 30px 0px 0px;" class="ratio img-responsive img-circle inlineBlock verticalAlignMiddle"></div>
@@ -81,19 +84,12 @@
         </div>
 <!--        Skills: Python Tensorflow Java JavaScript WebGL Threejs Bootstrap jQuery HTML CSS git-->
         
+        <div id="projects"></div>
         <div class="horizontalLine"></div>
-        
-        
-        
-        
-        
-        
-        
-        
         <div style="text-align: center">
-            <h3 class="sectionHeader"> Projects </h3>
+            <h1 class="sectionHeader"> Projects </h1>
         </div>
-        
+        <div class="col-xs-12" style="height:44px;"></div>
         
         
         
@@ -126,13 +122,33 @@
             
             <div class="movie-card container">
                 <div class="color-overlay row">
-                    <div class="col-6" style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg); background-size: 300px 200px"></div>
-                    <div class="movie-content col-6">
-                        <div class="movie-header">
-                            <h1 class="movie-title">Raytracer</h1>
-                            <h4 class="movie-info">Java, JavaScript</h4>
+                    <div class="">
+                        <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" width=300px height=200px />
+                    </div>
+                    <div class="movie-content col-5">
+                        <div class="moviePadding text">
+                            <div class="movie-header">
+                                <h1 class="movie-title">Raytracer</h1>
+                                <h4 class="movie-info">Java, JavaScript</h4>
+                            </div>
+                            <p class="movie-desc">A 3D raytracing renderer using the Phong Reflection Model. Features diffuse, specular, and ambient lighting with light occlusion and variable degrees of reflection.</p>
                         </div>
-                        <p class="movie-desc">A 3D raytracing renderer using the Phong Reflection Model. Features diffuse, specular, and ambient lighting with light occlusion and variable degrees of reflection.</p>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="movie-card container">
+                <div class="color-overlay row">
+                    <div class="col-6" style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg); background-size: 300px 200px"></div>
+                    <div class="movie-content">
+                        <div class="moviePadding text">
+                            <div class="movie-header">
+                                <h1 class="movie-title">EEEEEEEEEEEEE</h1>
+                                <h4 class="movie-info">OOOOOOOOOO</h4>
+                            </div>
+                            <p class="movie-desc">A DONKEY IS MY FAVORITE ANIMAL BECAUSE IT GOES EEEOOOOOOOOO.</p>
+                        </div>
 
                     </div>
                 </div>

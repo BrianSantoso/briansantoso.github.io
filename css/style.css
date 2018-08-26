@@ -55,7 +55,12 @@ nav .header-logo p {
 }
 nav .navbar-nav li{
     
-    padding: 3px 20px 5px 5px;
+/*    padding: 3px 20px 5px 5px;*/
+/*    padding: 3px 12.5px 5px 12.5px;*/
+    padding-top: 0.18em;
+    padding-bottom: 0.18em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
     
     position: relative;
     float: none;
@@ -363,7 +368,7 @@ footer p {
 .myBanner {
     
 /*    background-color: #74e8d3;*/
-    background-color: #EDEDEE;
+/*    background-color: #EDEDEE;*/
 /*    background-color: #ff8581 ;*/
     width: 100%;
 /*    height: auto;*/
@@ -454,7 +459,7 @@ footer p {
 /*    font-family: 'News Cycle', sans-serif;*/
     font-family: 'Raleway', sans-serif;
     color: #3f3f3f;
-    font-weight: 200;
+    font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -551,7 +556,7 @@ a {
 /*	height: 300px;*/
     height: 100%;
 	display: block;
-	margin: 8vh auto;
+	margin: 13vh auto;
 	border-radius: 8px;
 	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
     
@@ -602,8 +607,25 @@ a {
 /*	letter-spacing: 1px;*/
 	letter-spacing: 1px;
 	line-height: 1;
-	font-weight: 400;
+/*	font-weigh: 400;*/
+	font-weight: 550;
+    
+    
 }
+
+.movie-card:hover {
+/*
+    transform: scale(1.03);
+    transition-duration: 0.35s;
+*/
+}
+
+.moviePadding{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+} 
 
 .movie-content {
 	width: 40%;
