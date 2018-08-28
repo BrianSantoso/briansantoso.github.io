@@ -18,6 +18,7 @@
     
     <body>
 <!--        <meta name="viewport" content="width=857, initial-scale=1">-->
+        <div id="about"></div>
         <header class="container text-center">
             
             <div class="header-logo d-none d-md-block">
@@ -50,7 +51,7 @@
             <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
                 <div class="center">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">about</a></li>
+                        <li class="active"><a href="#about">about</a></li>
                         <li><a href="#projects">projects</a></li>
                         <li><a href="#education">education</a></li>
                         <li><a href="#skills">skills</a></li>
@@ -65,7 +66,7 @@
 <!--        <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/yz6dNf7X7SA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
         
         <!-- Spacer -->
-        <div id="about"></div>
+        
         <div class="col-xs-12" style="height:34px;"></div>
         <!-- https://codepen.io/ThibaultG4U/pen/kXVZqm-->
         <!-- https://codepen.io/edge0703/pen/iHJuA-->
@@ -82,9 +83,9 @@
                 </div>
             </div>
         </div>
-<!--        Skills: Python Tensorflow Java JavaScript WebGL Threejs Bootstrap jQuery HTML CSS git-->
+
         
-        <div id="projects"></div>
+        <div id="projects" style="background-color: black;"></div>
         <div class="horizontalLine"></div>
         <div style="text-align: center">
             <h1 class="sectionHeader"> Projects </h1>
@@ -183,17 +184,19 @@
             </div>
             <!-- Card 1: Blade Runner -->
             <div class="movie-card container">
-                <div class="color-overlay row">
-                    <div class="col-6" style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg); background-size: 300px 200px"></div>
-                    <div class="movie-content col-6">
-                        <div class="movie-header">
-                            <h1 class="movie-title">Blade Runner</h1>
-                            <h4 class="movie-info">(1982) Sci-Fi, Thriller</h4>
-                        </div>
-                        <p class="movie-desc">A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator. A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.</p>
+                <a href="#">
+                    <div class="color-overlay row">
+                        <div class="col-6" style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg); background-size: 300px 200px"></div>
+                        <div class="movie-content col-6">
+                            <div class="movie-header">
+                                <h1 class="movie-title">Blade Runner</h1>
+                                <h4 class="movie-info">(1982) Sci-Fi, Thriller</h4>
+                            </div>
+                            <p class="movie-desc">A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator. A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.</p>
 
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             
 
@@ -258,18 +261,14 @@
         <div style="text-align: center">
             <h1 class="sectionHeader"> Skills </h1>
         </div>
-        <p class="text" style="text-align: center"> None. I'm literally a vegetable
-        </p>
-        
-        
-        
-        <div class="col-xs-12" style="height:1200px;"></div>
-        
+        <p class="text" style="text-align: center"> None. I'm literally a vegetable!
+                    Python Tensorflow Java JavaScript WebGL Threejs Bootstrap jQuery HTML CSS git
+        </p>  
         
         <div id="contact"></div>
         <div class="horizontalLine"></div>
         <div style="text-align: center">
-            <h1 class="sectionHeader" style="text-transform: none;"> Contact Me! </h1>
+            <h1 class="sectionHeader" style="text-transform: none;"> Contact Me! :D </h1>
         </div>
         
         <div class="contact content-body">
@@ -311,6 +310,17 @@
                 }
             };
             
+            // smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: "start" // or "end"
+                    });
+                });
+            });
             
         
         </script>
