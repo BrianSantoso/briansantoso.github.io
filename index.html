@@ -13,6 +13,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
+        
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </head>
 
     
@@ -50,8 +55,8 @@
                         
             <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
                 <div class="center">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#about">about</a></li>
+                    <ul id="navbarList" class="nav navbar-nav">
+                        <li><a href="#about">about</a></li>
                         <li><a href="#projects">projects</a></li>
                         <li><a href="#education">education</a></li>
                         <li><a href="#skills">skills</a></li>
@@ -199,6 +204,24 @@
                 </a>
             </div>
             
+            <div class="movie-card container">
+                <a href="#">
+                    <div class="color-overlay row">
+                        <div class="moviePicture inlineBlock">
+                            <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" width="300" height="200" />
+                        </div>
+                        <div class="movie-content inlineBlock col-6">
+                            <div class="movie-header">
+                                <h1 class="movie-title">im working</h1>
+                                <h4 class="movie-info">on this one</h4>
+                            </div>
+                            <p class="movie-desc"> i only look down to look at my shoes i only look down to look at my shoesi only look down to look at my shoesi only look down to look at my shoes </p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
 
             
             
@@ -252,7 +275,7 @@
             <h1 class="sectionHeader"> Education </h1>
         </div>
         
-        <p class="text" style="text-align: center"> Although I attend newbury park high school, most of my knowlede comes from homeschooling. I'm very autodidactic when it comes to education; I learn mostly from textbooks, research papers, articles, videos, reading other peoples' code, and practice. AP Computer Science A: 5
+        <p class="text" style="text-align: center"> Although I attend newbury park high school, most of my knowlede comes from homeschooling. I'm an autodidact when it comes to Math and CS; I learn mostly from textbooks, research papers, articles, videos, reading other peoples' code, and practice. AP Computer Science A: 5
         AP Computer Science Principles: 5
         </p>
         
@@ -279,7 +302,7 @@
                 <button type="submit">Send</button>
             </form>
           </div>
-        
+        <div class="col-xs-12" style="height:1000px;"></div>
         <footer class="text-center">
             <p class="copyright">COPYRIGHT © 2018</p>  
         </footer>
@@ -297,6 +320,31 @@
             const navbarSubstituteHeight = navbar.offsetHeight
 
 
+            
+            
+            // navbar-highlight variables
+            navbarLis = $('#navbarList').children()
+            navbarLinks = $('#navbarList').find('a')
+            console.log(navbarLinks)
+            anchorBottoms = []
+
+            for(var i=0; i<navbarLinks.length; i++){
+                var a = navbarLinks[i]
+                var idToFind = a.getAttribute('href')
+                var anchor = $(idToFind)
+                anchorBottoms.push(anchor.offset().top + anchor.height())
+                
+            }
+             
+             // i dont think this is doing anything, the implementation in the onscroll function seems to be fixing the problem resize problem
+             $(window).on('resize',function(){
+                var a = navbarLinks[i]
+                var idToFind = a.getAttribute('href')
+                var anchor = $(idToFind)
+                anchorBottoms[i] = (anchor.offset().top + anchor.height())
+            })
+            
+            
             window.onscroll = function() {
             // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
                 if (window.pageYOffset >= sticky) {
@@ -308,27 +356,65 @@
                     navbar.classList.remove("sticky-header");
                     navbarSubstitute.style.height = 0
                 }
+                
+                
+                
+                
+                // fixes resize bug
+                for(var i=0; i<navbarLinks.length; i++){
+                    var a = navbarLinks[i]
+                    var idToFind = a.getAttribute('href')
+                    var anchor = $(idToFind)
+                    anchorBottoms[i] = (anchor.offset().top + anchor.height())
+
+                }
+                // we round here to reduce a little workload https://stackoverflow.com/questions/20276166/how-do-i-make-my-navbar-change-css-class-upon-scrolling-past-an-anchor-point
+                var stopy = Math.round($(window).scrollTop()) + 1e-6;
+
+                for(var i=0; i<navbarLinks.length; i++){
+//                    if(!anchorBottoms[i]) continue; // be careful can be 0!
+                    
+                    
+                    
+                    var bottom = anchorBottoms[i]
+                    var top = anchorBottoms[i + 1] ? anchorBottoms[i + 1] : Number.POSITIVE_INFINITY
+                    var a = navbarLinks[i]
+                    var idToFind = a.getAttribute('href')
+                    
+                    if(idToFind === "#about"){
+                        console.log(bottom)
+                        console.log(top)
+                    }
+                    
+                    if (stopy > bottom && stopy <= top) {
+                        navbarLis[i].classList.add('active');
+                        console.log(idToFind)
+                    } else {
+                        navbarLis[i].classList.remove('active');
+                    }
+                }
             };
             
             // smooth scrolling
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
+                    
+                    
 
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth',
                         block: "start" // or "end"
                     });
+                    window.onscroll(); // simulate a scroll update
                 });
             });
-            
-        
+             
+            window.onscroll()
         </script>
         
         
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
     </body>
     
 </html>

@@ -755,7 +755,60 @@ a {
 
 */
 
+@media (max-width:1000px) {
+	.movie-content {
+		width: 50%;
+		max-width: 95%;
+	}
+    
+    
+    
+    
+    .movie-card,.movie-card:nth-child(2),.movie-card:nth-child(3) {
+		background-position:50% 0%;
+		background-size: cover;
+		height: 400px;
+	}
+}
 
+
+
+/*Third state*/
+@media (max-width:800px) {
+	.movie-card {
+		width: 95%;
+		max-width: 95%;
+	}
+}
+
+@media (max-width:600px) {
+	
+/*
+	.color-overlay {
+		background: linear-gradient(to bottom, rgba(42,159,255,.2) 0%,rgba(33,33,32,1) 60%,rgba(33,33,32,1) 100%);
+	}
+*/
+	
+    .moviePicture {
+/*        display: block;*/
+    }
+    
+    
+	.movie-content {
+/*		margin-top: 4.2em;*/
+/*        display: block;*/
+		width: 90%;
+/*        background-color: aqua;*/
+	}
+    
+/*
+    .movie-content::before {
+      content: "\A";
+      white-space: pre;
+    }
+*/
+	
+}
 
 
 
