@@ -435,7 +435,7 @@ footer p {
 /*    font-family: 'Source Sans Pro';*/
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    color: ##212529;
+    color: #212529;
     
 }
 
@@ -610,7 +610,12 @@ a {
 }
 
 .movie-header {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em
+}
+
+.movie-title {
+/*    margin-top: 1em;*/
 }
 
 .movie-info {
@@ -631,6 +636,7 @@ a {
     
 /*    font-size: 16px;*/
     color: #212529;
+    margin-top: 1em;
 }
 
 
