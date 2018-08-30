@@ -341,6 +341,21 @@ footer p {
 /*    max-width: 200%;*/
 }
 
+.myCircleImage {
+    background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg);
+    width: 160px;
+    height: 160px;
+    margin: 0px 30px 0px 0px;
+    
+    -webkit-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
+
+}
+
+.myCircleImage:hover{
+    background-image: url('https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png');
+}
+
 .imgPusher {
     display: block;
     overflow: hidden;
@@ -580,6 +595,7 @@ a {
     transition: .4s;
     
     min-width: 300px;
+    min-height: 200px;
     
 
 /*    height: auto;*/
@@ -607,6 +623,12 @@ a {
     margin: auto;
     vertical-align: middle;
     
+}
+
+.moviePicture .thumbnail {
+    display: block;
+    margin: auto;
+    vertical-align: middle;
 }
 
 .movie-header {
@@ -638,6 +660,71 @@ a {
     color: #212529;
     margin-top: 1em;
 }
+
+
+/* THUMBNAILS */
+
+/* default thumbnail */
+.thumbnail {
+    
+    background-image: url(https://picsum.photos/300/200/?random);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+    
+    -webkit-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.movie-card:hover .thumbnail{
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+
+/* custom thumbnails */
+
+.thumbnail:nth-child(1) {
+    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+/*    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);*/
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+.movie-card:hover .thumbnail:nth-child(1){
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+
+
+.thumbnail:nth-child(2) {
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+.movie-card:hover .thumbnail:nth-child(2){
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -852,7 +939,7 @@ a {
     }
 }
 
-@media (max-width:728px) {
+@media (max-width:760px) {
 	.movie-card {
 		width: 85%;
 		max-width: 85%;
@@ -862,7 +949,17 @@ a {
     
     .moviePicture {
         float: none;
+        width: 100%;
     }
+    
+    .moviePicture img {
+    
+        display: block;
+        margin: 0 auto;
+        vertical-align: middle;
+
+    }
+    
     .movie-content {
         float: none;
         margin: 5vh auto 6vh auto;
