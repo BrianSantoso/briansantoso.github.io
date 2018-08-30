@@ -619,7 +619,8 @@ a {
 */
 
 .movie-card h1,h2,h3 {
-	font-family: $font-stack-header;
+	font-family: 'Raleway', sans-serif;
+/*	font-family: $font-stack-header;*/
 /*	text-transform: uppercase;*/
 /*	letter-spacing: 1px;*/
 	letter-spacing: 1px;
@@ -798,7 +799,7 @@ a {
 	}
 }
 
-@media (max-width:420px) {
+@media (max-width:728px) {
 	.movie-card {
 		width: 85%;
 		max-width: 85%;
@@ -808,16 +809,15 @@ a {
     
     .moviePicture {
         float: none;
-/*        margin: 0 auto;*/
     }
     .movie-content {
         float: none;
-        margin: 0 auto;
-        width: 100%;
+        margin: 5vh auto 6vh auto;
+        width: 85%;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:0px) {
 	
 /*
 	.color-overlay {
