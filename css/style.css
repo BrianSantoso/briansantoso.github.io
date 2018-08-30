@@ -706,6 +706,7 @@ a {
 
 .movie-card:hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
@@ -713,16 +714,18 @@ a {
 /* custom thumbnails */
 
 #movie-card-list .movie-card:nth-child(1) .thumbnail {
-    background-image: url(https://picsum.photos/320/200);
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
+/*    background-image: url(https://picsum.photos/320/200);*/
 /*    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);*/
-    background-size: 300px 200px;
-    width: 300px;
+    background-size: 200px 200px;
+    width: 200px;
     height: 200px;
 }
 
 #movie-card-list .movie-card:nth-child(1):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
-    width: 300px;
+    background-size: 200px 200px;
+    width: 200px;
     height: 200px;
 }
 
@@ -738,6 +741,7 @@ a {
 
 #movie-card-list .movie-card:nth-child(2):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
@@ -752,6 +756,7 @@ a {
 
 #movie-card-list .movie-card:nth-child(3):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
@@ -766,6 +771,7 @@ a {
 
 #movie-card-list .movie-card:nth-child(4):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
@@ -780,6 +786,7 @@ a {
 
 #movie-card-list .movie-card:nth-child(5):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
@@ -794,6 +801,7 @@ a {
 
 #movie-card-list .movie-card:nth-child(6):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
@@ -808,6 +816,7 @@ a {
 
 #movie-card-list .movie-card:nth-child(7):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
