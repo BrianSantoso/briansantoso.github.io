@@ -682,19 +682,16 @@ a {
     height: 200px;
 }
 
-
-
 /* custom thumbnails */
 
-.thumbnail:nth-child(1) {
+#movie-card-list .movie-card:nth-child(1) .thumbnail {
     background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
-/*    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);*/
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
 
-.movie-card:hover .thumbnail:nth-child(1){
+#movie-card-list .movie-card:nth-child(1):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
     width: 300px;
     height: 200px;
@@ -702,20 +699,88 @@ a {
 
 
 
+#movie-card-list .movie-card:nth-child(2) .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
 
-.thumbnail:nth-child(2) {
+#movie-card-list .movie-card:nth-child(2):hover .thumbnail{
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+#movie-card-list .movie-card:nth-child(3) .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(3):hover .thumbnail{
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+#movie-card-list .movie-card:nth-child(4) .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(4):hover .thumbnail{
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+#movie-card-list .movie-card:nth-child(5) .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(5):hover .thumbnail{
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+#movie-card-list .movie-card:nth-child(6) .thumbnail {
+    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(6):hover .thumbnail{
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    width: 300px;
+    height: 200px;
+}
+
+
+#movie-card-list .movie-card:nth-child(7) .thumbnail {
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
 
-.movie-card:hover .thumbnail:nth-child(2){
+#movie-card-list .movie-card:nth-child(7):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
     width: 300px;
     height: 200px;
 }
-
 
 
 
