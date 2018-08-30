@@ -558,9 +558,23 @@ a {
 	text-decoration: none;
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .movie-card-list {
     box-sizing:border-box;
 }
+*/
 
 .roundedCorners {
     border-radius: 8px;
@@ -603,6 +617,13 @@ a {
     
 }
 
+.movie-card:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
 .movie-card a {
     text-decoration: none;
     color: inherit;
@@ -615,6 +636,13 @@ a {
     margin: auto;
     text-align: center;
     min-height: 200px;
+    
+    
+    
+    /*trying to center*/
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
 }
 
 .moviePicture img {
@@ -623,12 +651,6 @@ a {
     margin: auto;
     vertical-align: middle;
     
-}
-
-.moviePicture .thumbnail {
-    display: block;
-    margin: auto;
-    vertical-align: middle;
 }
 
 .movie-header {
@@ -674,6 +696,12 @@ a {
     
     -webkit-transition: background-image 0.3s ease-in-out;
     transition: background-image 0.3s ease-in-out;
+    
+    
+    /*hmm trying to vertically center*/
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
 }
 
 .movie-card:hover .thumbnail{
@@ -685,7 +713,8 @@ a {
 /* custom thumbnails */
 
 #movie-card-list .movie-card:nth-child(1) .thumbnail {
-    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-image: url(https://picsum.photos/320/200);
+/*    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);*/
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -700,7 +729,8 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(2) .thumbnail {
-    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+/*    background-image: url(https://picsum.photos/320/200);*/
+    background-image: url(https://github.com/BrianSantoso/SketchGAN/raw/master/samples/363000_6.PNG);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -714,7 +744,7 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(3) .thumbnail {
-    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-image: url(https://picsum.photos/310/200);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -728,7 +758,7 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(4) .thumbnail {
-    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-image: url(https://picsum.photos/300/300/?random);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -742,7 +772,7 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(5) .thumbnail {
-    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-image: url(https://picsum.photos/300/200);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -756,7 +786,7 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(6) .thumbnail {
-    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);
+    background-image: url(https://picsum.photos/300/200/?random);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -1017,6 +1047,15 @@ a {
         width: 100%;
     }
     
+    .moviePicture {
+    
+        display: block;
+        margin: 0 auto;
+        vertical-align: middle;
+
+    }
+    
+    /*not needed anymore but kept for reference*/
     .moviePicture img {
     
         display: block;
