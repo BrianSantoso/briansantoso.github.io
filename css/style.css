@@ -748,16 +748,17 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(3) .thumbnail {
-    background-image: url(https://picsum.photos/310/200);
-    background-size: 300px 200px;
-    width: 300px;
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/ray-tracer-java/master/javaRaytracer1.PNG);
+/*    background-image: url(https://picsum.photos/310/200);*/
+    background-size: 200px 200px;
+    width: 200px;
     height: 200px;
 }
 
 #movie-card-list .movie-card:nth-child(3):hover .thumbnail{
     background-image: url(http://i.stack.imgur.com/SBv4T.gif);
-    background-size: 300px 200px;
-    width: 300px;
+    background-size: 200px 200px;
+    width: 200px;
     height: 200px;
 }
 
@@ -800,7 +801,7 @@ a {
 }
 
 #movie-card-list .movie-card:nth-child(6):hover .thumbnail{
-    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/Terrain/test45.gif);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
