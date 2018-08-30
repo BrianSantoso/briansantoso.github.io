@@ -34,7 +34,7 @@ header .header-logo a {
     z-index: 15;
     overflow: hidden;
     background-color: white;
-    
+    border-bottom: 2px solid #f7f7f7;
 }
 
 nav .header-logo {
@@ -547,6 +547,10 @@ a {
     box-sizing:border-box;
 }
 
+.roundedCorners {
+    border-radius: 8px;
+}
+
 .movie-card {
 /*	background-image: $background-image;*/
 	background-size: contain;
@@ -575,6 +579,12 @@ a {
 	overflow-x: hidden;
     transition: .4s;
     
+    min-width: 300px;
+    
+
+/*    height: auto;*/
+/*    height: 600px;*/
+    
 }
 
 .movie-card a {
@@ -582,6 +592,11 @@ a {
     color: inherit;
 }
 
+.moviePicture {
+    float: left;
+/*    margin-left: 50px;*/
+    margin: auto;
+}
 /*
 .movie-card:nth-child(2) {
 	background-image: $background-image2;
@@ -631,7 +646,7 @@ a {
 } 
 
 .movie-content {
-	width: 40%;
+	width: 45%;
 	display: block;
 	position:relative;
 	float: right;
@@ -764,21 +779,42 @@ a {
     
     
     
+/*
     .movie-card,.movie-card:nth-child(2),.movie-card:nth-child(3) {
 		background-position:50% 0%;
 		background-size: cover;
 		height: 400px;
 	}
+*/
 }
 
 
 
 /*Third state*/
-@media (max-width:800px) {
+@media (max-width:900px) {
 	.movie-card {
 		width: 95%;
 		max-width: 95%;
 	}
+}
+
+@media (max-width:420px) {
+	.movie-card {
+		width: 85%;
+		max-width: 85%;
+        
+        text-align: center;
+	}
+    
+    .moviePicture {
+        float: none;
+/*        margin: 0 auto;*/
+    }
+    .movie-content {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 @media (max-width:600px) {
@@ -798,6 +834,8 @@ a {
 /*		margin-top: 4.2em;*/
 /*        display: block;*/
 		width: 90%;
+        text-align: left;
+        vertical-align: middle;
 /*        background-color: aqua;*/
 	}
     

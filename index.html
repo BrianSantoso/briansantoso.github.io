@@ -27,7 +27,7 @@
         <header class="container text-center">
             
             <div class="header-logo d-none d-md-block">
-                <a href="#" class="d-none d-md-block">Brian Santoso</a>
+                <a href="https://github.com/BrianSantoso" class="d-none d-md-block">Brian Santoso</a>
             </div>  
             
         </header>
@@ -203,14 +203,14 @@
                     </div>
                 </a>
             </div>
-            
+<!--             style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);"-->
             <div class="movie-card container">
                 <a href="#">
-                    <div class="color-overlay row">
-                        <div class="moviePicture inlineBlock">
-                            <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" width="300" height="200" />
+                    <div class="color-overlay">
+                        <div class="moviePicture inlineBlock" width="300">
+                            <img src="https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG" width="200" height="200" />
                         </div>
-                        <div class="movie-content inlineBlock col-6">
+                        <div class="movie-content inlineBlock">
                             <div class="movie-header">
                                 <h1 class="movie-title">im working</h1>
                                 <h4 class="movie-info">on this one</h4>
@@ -285,7 +285,7 @@
             <h1 class="sectionHeader"> Skills </h1>
         </div>
         <p class="text" style="text-align: center"> None. I'm literally a vegetable!
-                    Python Tensorflow Java JavaScript WebGL Threejs Bootstrap jQuery HTML CSS git
+                    Python Tensorflow Java JavaScript WebGL Threejs Bootstrap jQuery HTML CSS git Also, I'll totally make a website for you :)
         </p>  
         
         <div id="contact"></div>
@@ -319,29 +319,30 @@
             navbarSubstitute.style.height = 0;
             const navbarSubstituteHeight = navbar.offsetHeight
 
-
+            let disableAutoNavbarHighlight = false;
             
             
             // navbar-highlight variables
-            navbarLis = $('#navbarList').children()
-            navbarLinks = $('#navbarList').find('a')
-            console.log(navbarLinks)
-            anchorBottoms = []
+            const navbarLis = $('#navbarList').children();
+            const navbarLinks = $('#navbarList').find('a');
+            let anchorBottoms = [];
 
-            for(var i=0; i<navbarLinks.length; i++){
-                var a = navbarLinks[i]
-                var idToFind = a.getAttribute('href')
-                var anchor = $(idToFind)
+            for(let i=0; i<navbarLinks.length; i++){
+                let a = navbarLinks[i]
+                let idToFind = a.getAttribute('href')
+                let anchor = $(idToFind)
                 anchorBottoms.push(anchor.offset().top + anchor.height())
                 
             }
              
              // i dont think this is doing anything, the implementation in the onscroll function seems to be fixing the problem resize problem
              $(window).on('resize',function(){
-                var a = navbarLinks[i]
-                var idToFind = a.getAttribute('href')
-                var anchor = $(idToFind)
-                anchorBottoms[i] = (anchor.offset().top + anchor.height())
+                for(let i=0; i<navbarLinks.length; i++){
+                    let a = navbarLinks[i]
+                    let idToFind = a.getAttribute('href')
+                    let anchor = $(idToFind)
+                    anchorBottoms[i] = (anchor.offset().top + anchor.height())
+                }
             })
             
             
@@ -358,37 +359,38 @@
                 }
                 
                 
-                
+                // Position based navbar highlighting
                 
                 // fixes resize bug
-                for(var i=0; i<navbarLinks.length; i++){
-                    var a = navbarLinks[i]
-                    var idToFind = a.getAttribute('href')
-                    var anchor = $(idToFind)
+                for(let i=0; i<navbarLinks.length; i++){
+                    let a = navbarLinks[i]
+                    let idToFind = a.getAttribute('href')
+                    let anchor = $(idToFind)
                     anchorBottoms[i] = (anchor.offset().top + anchor.height())
 
                 }
                 // we round here to reduce a little workload https://stackoverflow.com/questions/20276166/how-do-i-make-my-navbar-change-css-class-upon-scrolling-past-an-anchor-point
-                var stopy = Math.round($(window).scrollTop()) + 1e-6;
+                let stopy = Math.floor($(window).scrollTop() + 1);
 
-                for(var i=0; i<navbarLinks.length; i++){
+                for(let i=0; i<navbarLinks.length; i++){
 //                    if(!anchorBottoms[i]) continue; // be careful can be 0!
                     
                     
                     
-                    var bottom = anchorBottoms[i]
-                    var top = anchorBottoms[i + 1] ? anchorBottoms[i + 1] : Number.POSITIVE_INFINITY
-                    var a = navbarLinks[i]
-                    var idToFind = a.getAttribute('href')
+                    let bottom = anchorBottoms[i]
+                    let top = anchorBottoms[i + 1] ? anchorBottoms[i + 1] : Number.POSITIVE_INFINITY
+                    let a = navbarLinks[i]
+                    let idToFind = a.getAttribute('href')
                     
-                    if(idToFind === "#about"){
-                        console.log(bottom)
-                        console.log(top)
-                    }
+//                    if(idToFind === "#about"){
+//                        console.log(bottom)
+//                        console.log(top)
+//                    }
                     
                     if (stopy > bottom && stopy <= top) {
-                        navbarLis[i].classList.add('active');
-                        console.log(idToFind)
+                        if(!disableAutoNavbarHighlight)
+                            navbarLis[i].classList.add('active');
+//                        console.log(idToFind)
                     } else {
                         navbarLis[i].classList.remove('active');
                     }
@@ -400,15 +402,26 @@
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     
-                    
-
+                    removeAllNavHighlights();
+//                    disableAutoNavbarHighlight = true;  // temporarily disable
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth',
                         block: "start" // or "end"
                     });
+//                    disableAutoNavbarHighlight = false; // reenable
                     window.onscroll(); // simulate a scroll update
                 });
             });
+            
+            function removeAllNavHighlights(){
+                $('#navbarList').children().removeClass("active")
+            }
+            
+            // just a function to help me figure out measurements the css :)
+            function calculateMaxSizeForCard(picWidth, percentCardWidth, percentDescriptionWidth){
+                // assumes no margins
+                return picWidth / (percentCardWidth - percentCardWidth * percentDescriptionWidth)
+            }
              
             window.onscroll()
         </script>
