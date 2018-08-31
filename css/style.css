@@ -1248,3 +1248,46 @@ a {
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.animation {
+    -webkit-animation: slideInLeft 1500ms linear;
+    animation: slideInLeft 1500ms linear;
+}
+*/
+
+.revealOnScroll { opacity: 0; }
+.animated { opacity: 1; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
