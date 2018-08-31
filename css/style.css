@@ -584,7 +584,7 @@ a {
 /*	background-image: $background-image;*/
 	background-size: contain;
 	background-repeat: no-repeat;
-	width:75%;
+	width:85%;
 	max-width: 800px;
 /*	height: 300px;*/
     height: 100%;
@@ -735,14 +735,15 @@ a {
 /*    background-image: url(https://picsum.photos/320/200);*/
     background-image: url(https://github.com/BrianSantoso/SketchGAN/raw/master/samples/363000_6.PNG);
     background-size: 300px 200px;
+    background-repeat: no-repeat;
     width: 300px;
     height: 200px;
 }
 
 #movie-card-list .movie-card:nth-child(2):hover .thumbnail{
-    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
-    background-size: 300px 200px;
-    width: 300px;
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/SketchGAN/master/samples/latent_space_traversal_1.gif);
+    background-size: 200px 200px;
+    width: 200px;
     height: 200px;
 }
 
