@@ -741,7 +741,7 @@ a {
 }
 
 #movie-card-list .movie-card:nth-child(2):hover .thumbnail{
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/SketchGAN/master/samples/latent_space_traversal_1.gif);
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/SketchGAN/master/samples/latent_space_traversal_2.gif);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
