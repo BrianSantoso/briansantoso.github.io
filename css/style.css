@@ -660,6 +660,7 @@ a {
 
 .movie-title {
 /*    margin-top: 1em;*/
+/*    font-weight: 400;*/
 }
 
 .movie-info {
@@ -810,16 +811,16 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(7) .thumbnail {
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
-    background-size: 300px 200px;
-    width: 300px;
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedimg.png);
+    background-size: 278px 200px;
+    width: 278px;
     height: 200px;
 }
 
 #movie-card-list .movie-card:nth-child(7):hover .thumbnail{
-    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
-    background-size: 300px 200px;
-    width: 300px;
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedgif2.gif);
+    background-size: 278px 200px;
+    width: 278px;
     height: 200px;
 }
 
@@ -864,6 +865,7 @@ a {
 	line-height: 1;
 /*	font-weigh: 400;*/
 	font-weight: 550;
+/*	font-weight: 500;*/
     
     
 }

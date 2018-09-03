@@ -9,7 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!--        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
@@ -104,7 +105,7 @@
         
         <div id="movie-card-list">
             
-            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="0">
                 <a href="https://github.com/BrianSantoso/RubiksCube" target="_blank">
                     <div class="color-overlay">
                         <div class="moviePicture inlineBlock">
@@ -123,7 +124,7 @@
             </div>
 
             
-            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="0">
                 <a href="https://github.com/BrianSantoso/SketchGAN" target="_blank">
                     <div class="color-overlay">
                         <div class="moviePicture inlineBlock">
@@ -141,7 +142,7 @@
                 </a>
             </div>
             
-            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="0">
                 <a href="https://github.com/BrianSantoso/ray-tracer-java" target="_blank">
                     <div class="color-overlay">
                         <div class="moviePicture inlineBlock">
@@ -159,7 +160,7 @@
                 </a>
             </div>
             
-            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="0">
                 <a href="https://github.com/BrianSantoso/game-of-life-3d" target="_blank">
                     <div class="color-overlay">
                         <div class="moviePicture inlineBlock">
@@ -177,7 +178,7 @@
                 </a>
             </div>
             
-            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="0">
                 <a href="https://github.com/BrianSantoso/Handwritten-Digit-Recognition" target="_blank">
                     <div class="color-overlay">
                         <div class="moviePicture inlineBlock">
@@ -195,7 +196,7 @@
                 </a>
             </div>
             
-            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+            <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="0">
                 <a href="https://github.com/BrianSantoso/terrain" target="_blank">
                     <div class="color-overlay">
                         <div class="moviePicture inlineBlock" width="300">
@@ -215,17 +216,17 @@
             
 <!--             style="background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);"-->
             <div class="movie-card container revealOnScroll" data-animation="slideInLeft" data-timeout="200">
-                <a href="https://github.com/BrianSantoso/briansantoso.github.io" target="_blank">
+                <a href="https://youtu.be/u6GX6ijj_iE" target="_blank">
                     <div class="color-overlay">
                         <div class="moviePicture inlineBlock">
                             <div class="thumbnail"></div>
                         </div>
                         <div class="movie-content inlineBlock">
                             <div class="movie-header">
-                                <h1 class="movie-title">im working</h1>
-                                <h4 class="movie-info">on this one</h4>
+                                <h2 class="movie-title">Web-based Game Engine</h2>
+                                <h4 class="movie-info">Javascript</h4>
                             </div>
-                            <p class="movie-desc"> i only look down to look at my shoes i only look down to look at my shoesi only look down to look at my shoesi only look down to look at my shoes </p>
+                            <p class="movie-desc"> A top-down, tile-based game engine for the web. Original tile-set, font, and art. </p>
 
                         </div>
                     </div>
@@ -245,7 +246,7 @@
         
 <!--        Although I attend newbury park high school, most of my knowlede comes from homeschooling. I'm an autodidact when it comes to Math and CS;  AP Computer Science A: 5
         AP Computer Science Principles: 5-->
-        <p class="text" style="text-align: center">  I learn mostly from textbooks, research papers, articles, videos, reading other peoples' code, and practice.
+        <p class="text" style="text-align: center">  I learn mostly from textbooks, research papers, articles, videos, reading other peoples' code, practice, and failing. A lot.
         </p>
         
         <div id="skills"></div>
@@ -253,8 +254,8 @@
         <div style="text-align: center">
             <h1 class="sectionHeader"> Skills </h1>
         </div>
-        <p class="text" style="text-align: center"> None. I'm literally a vegetable!
-                    Python Tensorflow Java JavaScript WebGL Threejs Bootstrap jQuery HTML CSS git Also, I'll totally make a website for you :)
+        <p class="text" style="text-align: center">
+                    Python Tensorflow Java JavaScript WebGL Threejs Bootstrap jQuery HTML CSS git. Oh, and I'll make a website for you.
         </p>  
         
         <div id="contact"></div>
@@ -418,7 +419,8 @@
                   var $this     = $(this),
                       offsetTop = $this.offset().top,
 //                      offsetBottom = $this.position().top + $this.offset().top + $this.outerHeight(true);
-                      offsetBottom = $this.position().top + $this.outerHeight(true);
+                      offsetBottom = $this.position().top + $this.outerHeight(true),
+                      mid = (offsetTop + offsetBottom)/2
                     
 //                    console.log("scrolled: " + scrolled)
 //                    console.log("win_height_padded: " + win_height_padded)
@@ -426,7 +428,7 @@
 //                    console.log("offsetBottom: " + offsetBottom)
 //                    console.log("outerHeight: " + $this.outerHeight(true))
                     
-                  if (scrolled + win_height_padded > offsetTop && scrolled < offsetBottom) {
+                  if (scrolled + win_height_padded > mid && scrolled < mid) {
                     if ($this.data('timeout')) {
                       window.setTimeout(function(){
                         $this.addClass('animated ' + $this.data('animation'));
