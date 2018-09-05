@@ -1,7 +1,6 @@
 body {
     
 /*    font-family: 'News Cycle', sans-serif;*/
-    
 }
 
 
@@ -351,8 +350,8 @@ footer p {
 .myCircleImage {
     background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg);
     background-size: 90%;
-    width: 160px;
-    height: 160px;
+    width: 178px;
+    height: 178px;
     margin: 0px 30px 0px 0px;
 /*    border: 7px solid #efefefef;*/
     
@@ -617,7 +616,7 @@ a {
     background-color: $bg-color;
 /*    background-color: rgba(255, 0, 0, 0); */
 	font-family: $font-stack-content;
-	font-size: 14px;
+	font-size: 1em;
 	color:$primary-color;
 	line-height: 1.5;
 	font-weight: 400;
@@ -670,13 +669,14 @@ a {
 }
 
 .movie-header {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
     margin-top: 0.5em
 }
 
 .movie-title {
 /*    margin-top: 1em;*/
 /*    font-weight: 400;*/
+    margin-bottom: 0.3em;
 }
 
 .movie-info {
@@ -687,9 +687,10 @@ a {
     line-height: 1;
 /*    margin: 0;*/
     font-weight: 650;
+    font-size: 1.7em;
     
     
-/*    margin-bottom: 0.5em;*/
+    margin-bottom: 0.3em;
 }
 
 .movie-desc {
@@ -1291,10 +1292,107 @@ a {
 .animated { opacity: 1; }
 
 
+#skillCardList {
+    display: block;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
 
+#skillCardList .skillCard {
+    
+    display: inline-block;
+    background-color: #ffffff;
+/*    box-shadow: 0px 8px 12px 0px rgba(200,200,200,0.075);*/
+    box-shadow: 0px 8px 12px 0px rgba(64,64,64,0.1);
+    
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    
+/*    max-width: 12em;*/
+    max-height: 50px;
+    
+/*    margin-top: 1vh;*/
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
 
+#skillCardList .skillCard:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+}
 
+#skillCardList .skillCardIcon {
+    box-sizing: border-box;
+    border-radius: 50%;
+/*    border: 2px solid #fafafa;*/
+/*    border: 2px solid #fafafa;*/
+    overflow: hidden;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+/*    position: absolute;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0);
+    
+    background-size: 80% 80%;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: #ffffff;
+}
 
+/*
+#skillCardList .skillCard:nth-child(1) .skillCardIcon{
+    
+    background-image: url("https://pbs.twimg.com/profile_images/439154912719413248/pUBY5pVj_400x400.png");
+    background-size: 80% 80%;
+    width: 50px;
+    height: 50px;
+    
+}
+
+#skillCardList .skillCard:nth-child(2) .skillCardIcon{
+    
+    background-image: url("https://pbs.twimg.com/profile_images/773317101012586496/q8sc1KuZ_400x400.jpg");
+    background-size: 80% 80%;
+    width: 50px;
+    height: 50px;
+    
+}
+
+#skillCardList .skillCard:nth-child(3) .skillCardIcon{
+    
+    background-image: url("https://pbs.twimg.com/profile_images/954020529391902720/jW4dnFtA_400x400.jpg");
+    background-size: 80% 80%;
+    width: 50px;
+    height: 50px;
+    
+}
+*/
+
+#skillCardList .skillCardBody {
+    
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: hidden;
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    color: #212529;
+    margin-left: 0;
+    margin-right: 0.8em;
+    white-space: nowrap;
+    transform: translate(-17%, 0);
+/*    margin: auto;*/
+    
+}
 
 
 
