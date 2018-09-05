@@ -17,8 +17,10 @@ body {
 
 header .header-logo {
     
-    padding: 20px 0px 10px;
-    font-size: 45px;
+/*    padding: 20px 0px 10px;*/
+    padding: 6vh 0px 2vh 0px;
+/*    font-size: 45px;*/
+    font-size: 4em;
     
 }
 
@@ -59,8 +61,12 @@ nav .navbar-nav li{
 /*    padding: 3px 12.5px 5px 12.5px;*/
     padding-top: 0.18em;
     padding-bottom: 0.18em;
+/*
     padding-left: 0.75em;
     padding-right: 0.75em;
+*/
+    padding-left: 0.9em;
+    padding-right: 0.9em;
     
     position: relative;
     float: none;
@@ -68,7 +74,8 @@ nav .navbar-nav li{
     
     
     font-family: 'News Cycle', sans-serif;
-    font-size: 18px;
+/*    font-size: 18px;*/
+    font-size: 1.5em;
     font-weight: 300;
     color: #b9b9b9;
     text-transform: lowercase;
@@ -126,8 +133,8 @@ footer p {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 2px solid #f7f7f7;
-    
+/*    border-bottom: 2px solid #f7f7f7;*/
+    box-shadow: 0px 8px 12px 0px rgba(200,200,200,0.075);
 }
 
 .delete-border {
@@ -343,9 +350,11 @@ footer p {
 
 .myCircleImage {
     background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg);
+    background-size: 90%;
     width: 160px;
     height: 160px;
     margin: 0px 30px 0px 0px;
+/*    border: 7px solid #efefefef;*/
     
     -webkit-transition: background-image 0.3s ease-in-out;
     transition: background-image 0.3s ease-in-out;
@@ -449,7 +458,8 @@ footer p {
 .text {
 /*    font-family: 'Source Sans Pro';*/
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+/*    font-size: 16px;*/
+    font-size: 1.3em;
     color: #212529;
     
 }
@@ -473,10 +483,13 @@ footer p {
     display: block;
 /*    font-family: 'News Cycle', sans-serif;*/
     font-family: 'Raleway', sans-serif;
-    color: #3f3f3f;
+    color: #424242;
     font-weight: 500;
-    letter-spacing: 3px;
+    font-size: 3em;
+/*    letter-spacing: 3px;*/
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+    padding-bottom: 3vh;
 }
 
 .pink {
@@ -592,7 +605,10 @@ a {
 	margin: 48px auto;
 	border-radius: 8px;
 /*	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);*/
-	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.1);
+/*	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.1);*/
+	box-shadow: 0px 8px 12px 0px rgba(64,64,64,0.1);
+    
+    
 /*    */
 /*    box-sizing:border-box;1
     box-sizing:inherit;
@@ -664,13 +680,15 @@ a {
 }
 
 .movie-info {
+    
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
 /*    font-size: 8em;*/
     line-height: 1;
 /*    margin: 0;*/
-    font-weight: 700;
+    font-weight: 650;
     
-    font-family: 'Raleway', sans-serif;
+    
 /*    margin-bottom: 0.5em;*/
 }
 
