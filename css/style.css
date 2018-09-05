@@ -1338,14 +1338,25 @@ a {
     
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+/*
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+*/
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    
+/*
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+*/
     
 /*    max-width: 12em;*/
     max-height: 50px;
     
 /*    margin-top: 1vh;*/
     margin-bottom: 2vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 0.6vw;
+    margin-right: 0.6vw;
 }
 
 #skillCardList .skillCard:before {
@@ -1358,16 +1369,20 @@ a {
     box-sizing: border-box;
     border-radius: 50%;
 /*    border: 2px solid #fafafa;*/
-/*    border: 2px solid #fafafa;*/
+/*    border: 2px solid #ffaaaa;*/
+/*    box-shadow: 0px 8px 12px 0px rgba(64,64,64,0.1);*/
     overflow: hidden;
     
     display: inline-block;
     vertical-align: middle;
     
 /*    position: absolute;*/
+    
+/*
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, 0);
+*/
     
     background-size: 80% 80%;
     width: 50px;
@@ -1416,10 +1431,10 @@ a {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
     color: #212529;
-    margin-left: 0;
-    margin-right: 0.8em;
+    margin-left: 0.1em;
+    margin-right: 1em;
     white-space: nowrap;
-    transform: translate(-17%, 0);
+/*    transform: translate(-17%, 0);*/
 /*    margin: auto;*/
     
 }
