@@ -1064,6 +1064,16 @@ a {
     .moviePicture {
         width: 50%;
     }
+    
+    
+    
+    
+    
+    
+    #skillCardList {
+        width: 95%;
+		max-width: 95%;
+    }
 }
 
 @media (max-width:760px) {
@@ -1101,6 +1111,17 @@ a {
         margin: 5vh auto 6vh auto;
         width: 85%;
     }
+    
+    
+    
+    
+    
+    
+    
+    #skillCardList {
+        width: 85%;
+		max-width: 85%;
+    }
 }
 
 @media (max-width:0px) {
@@ -1131,7 +1152,16 @@ a {
       white-space: pre;
     }
 */
-	
+    
+    
+    
+    
+    
+    
+	#skillCardList {
+        width: 90%;
+		max-width: 90%;
+    }
 }
 
 
