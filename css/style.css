@@ -1458,7 +1458,7 @@ a {
 .contact input, .contact textarea {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 0.6em;
     border-radius: 4px;
     border: none;
     margin-bottom: 1.4vh;
