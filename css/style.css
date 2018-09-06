@@ -145,10 +145,11 @@ footer p {
 .copyright {
     
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
     color: #626262;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 15px 0 0 0;
+    padding: 2vh 0 0 0;
     
 }
 
