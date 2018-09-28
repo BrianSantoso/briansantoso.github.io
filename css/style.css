@@ -1598,7 +1598,15 @@ blockquote .quote:after {
 }
 */
 
-
+.plaintext {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    color: #212529;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
 
 
 
