@@ -346,6 +346,16 @@ footer p {
 /*    max-width: 200%;*/
 }
 
+.myCircleImageNoHover {
+    background-size: 90%;
+    background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg);
+    width: 11.125em;
+    height: 11.125em;
+    margin: 0px 30px 0px 0px;
+
+
+}
+
 .myCircleImage {
     background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg);
     background-size: 90%;
@@ -737,24 +747,6 @@ a {
 /* custom thumbnails */
 
 #movie-card-list .movie-card:nth-child(1) .thumbnail {
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
-/*    background-image: url(https://picsum.photos/320/200);*/
-/*    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);*/
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
-}
-
-#movie-card-list .movie-card:nth-child(1):hover .thumbnail{
-    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
-}
-
-
-
-#movie-card-list .movie-card:nth-child(2) .thumbnail {
 /*    background-image: url(https://picsum.photos/320/200);*/
     background-image: url(https://github.com/BrianSantoso/SketchGAN/raw/master/samples/363000_6.PNG);
     background-size: 300px 200px;
@@ -763,15 +755,46 @@ a {
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(2):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(1):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/SketchGAN/master/samples/latent2.gif);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
 }
 
+#movie-card-list .movie-card:nth-child(2) .thumbnail {
+/*    background-image: url(https://picsum.photos/320/200);*/
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/unet/cmp_b0004.jpg);
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(2):hover .thumbnail{
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/unet/cmp_b0004.png);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
 
 #movie-card-list .movie-card:nth-child(3) .thumbnail {
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
+/*    background-image: url(https://picsum.photos/320/200);*/
+/*    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);*/
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(3):hover .thumbnail{
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(4) .thumbnail {
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/ray-tracer-java/master/javaRaytracer1.PNG);
 /*    background-image: url(https://picsum.photos/310/200);*/
     background-size: 300px 300px;
@@ -779,31 +802,16 @@ a {
     height: 300px;
 }
 
-#movie-card-list .movie-card:nth-child(3):hover .thumbnail{
-    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+#movie-card-list .movie-card:nth-child(4):hover .thumbnail{
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/ray-tracer-java/master/javaRaytracer1.PNG);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
 }
 
 
-#movie-card-list .movie-card:nth-child(4) .thumbnail {
-    background-image: url(https://picsum.photos/300/300/?random);
-    background-size: 300px 200px;
-    width: 300px;
-    height: 200px;
-}
-
-#movie-card-list .movie-card:nth-child(4):hover .thumbnail{
-    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
-    background-size: 300px 200px;
-    width: 300px;
-    height: 200px;
-}
-
-
 #movie-card-list .movie-card:nth-child(5) .thumbnail {
-    background-image: url(https://picsum.photos/300/200);
+    background-image: url(https://picsum.photos/300/300/?random);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -818,14 +826,14 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(6) .thumbnail {
-    background-image: url(https://picsum.photos/300/200/?random);
+    background-image: url(https://picsum.photos/300/200);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
 
 #movie-card-list .movie-card:nth-child(6):hover .thumbnail{
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/Terrain/test45.gif);
+    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -833,13 +841,28 @@ a {
 
 
 #movie-card-list .movie-card:nth-child(7) .thumbnail {
+    background-image: url(https://picsum.photos/300/200/?random);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(7):hover .thumbnail{
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/Terrain/test45.gif);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+
+#movie-card-list .movie-card:nth-child(8) .thumbnail {
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedimg.png);
     background-size: 278px 200px;
     width: 278px;
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(7):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(8):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedgif2.gif);
     background-size: 278px 200px;
     width: 278px;
