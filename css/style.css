@@ -349,6 +349,7 @@ footer p {
 .myCircleImageNoHover {
     background-size: 90%;
     background-image: url(https://storage.googleapis.com/kaggle-avatars/images/1366772-gp.jpg);
+/*    background-image: url(https://avatars3.githubusercontent.com/u/22692190?s=400&u=4832fb583a2c5e663cac876ac514c91be506d2a6&v=4);*/
     width: 11.125em;
     height: 11.125em;
     margin: 0px 30px 0px 0px;
@@ -788,7 +789,7 @@ a {
 }
 
 #movie-card-list .movie-card:nth-child(3):hover .thumbnail{
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/testrcgif2.gif);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
@@ -803,22 +804,22 @@ a {
 }
 
 #movie-card-list .movie-card:nth-child(4):hover .thumbnail{
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/ray-tracer-java/master/javaRaytracer1.PNG);
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/raytracer/raytracer2.PNG);
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
 }
 
 
 #movie-card-list .movie-card:nth-child(5) .thumbnail {
-    background-image: url(https://picsum.photos/300/300/?random);
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/4D-Chess/4Dchess3.PNG);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
 
 #movie-card-list .movie-card:nth-child(5):hover .thumbnail{
-    background-image: url(http://i.stack.imgur.com/SBv4T.gif);
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/4D-Chess/4dchessgif.gif);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
@@ -855,15 +856,15 @@ a {
 }
 
 
-#movie-card-list .movie-card:nth-child(8) .thumbnail {
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedimg.png);
+#movie-card-list .movie-card:nth-child(9) .thumbnail {
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
     background-size: 278px 200px;
     width: 278px;
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(8):hover .thumbnail{
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedgif2.gif);
+#movie-card-list .movie-card:nth-child(9):hover .thumbnail{
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
     background-size: 278px 200px;
     width: 278px;
     height: 200px;
