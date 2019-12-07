@@ -872,14 +872,14 @@ a {
 }
 
 
-#movie-card-list .movie-card:nth-child(9) .thumbnail {
+#movie-card-list .movie-card:nth-child(10) .thumbnail {
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
     background-size: 278px 200px;
     width: 278px;
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(9):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(10):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
     background-size: 278px 200px;
     width: 278px;
