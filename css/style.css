@@ -877,6 +877,19 @@ a {
     height: 200px;
 }
 
+#movie-card-list .movie-card:nth-child(9) .thumbnail {
+    background-image: url('https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedimg.png');
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(9):hover .thumbnail{
+    background-image: url('https://github.com/BrianSantoso/images/blob/master/PS4/topdowntilebasedgif2.gif?raw=true');
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
 
 #movie-card-list .movie-card:nth-child(10) .thumbnail {
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
