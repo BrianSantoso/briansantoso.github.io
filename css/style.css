@@ -748,6 +748,20 @@ a {
 /* custom thumbnails */
 
 #movie-card-list .movie-card:nth-child(1) .thumbnail {
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/4D-Chess/4Dchess3.PNG);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(1):hover .thumbnail{
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/4D-Chess/4dchessgif.gif);
+    background-size: 300px 200px;
+    width: 300px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(2) .thumbnail {
 /*    background-image: url(https://picsum.photos/320/200);*/
     background-image: url(https://github.com/BrianSantoso/SketchGAN/raw/master/samples/363000_6.PNG);
     background-size: 300px 200px;
@@ -756,14 +770,14 @@ a {
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(1):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(2):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/SketchGAN/master/samples/latent2.gif);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(2) .thumbnail {
+#movie-card-list .movie-card:nth-child(3) .thumbnail {
 /*    background-image: url(https://picsum.photos/320/200);*/
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/unet/cmp_b0004.jpg);
     background-size: 300px 200px;
@@ -772,14 +786,14 @@ a {
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(2):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(3):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/unet/cmp_b0004.png);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(3) .thumbnail {
+#movie-card-list .movie-card:nth-child(4) .thumbnail {
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/rk.PNG);
 /*    background-image: url(https://picsum.photos/320/200);*/
 /*    background-image: url(https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg);*/
@@ -788,14 +802,14 @@ a {
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(3):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(4):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/cube/testrcgif2.gif);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(4) .thumbnail {
+#movie-card-list .movie-card:nth-child(5) .thumbnail {
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/ray-tracer-java/master/javaRaytracer1.PNG);
 /*    background-image: url(https://picsum.photos/310/200);*/
     background-size: 300px 300px;
@@ -803,14 +817,14 @@ a {
     height: 300px;
 }
 
-#movie-card-list .movie-card:nth-child(4):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(5):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/raytracer/raytracer2.PNG);
     background-size: 300px 300px;
     width: 300px;
     height: 300px;
 }
 
-#movie-card-list .movie-card:nth-child(5) .thumbnail {
+#movie-card-list .movie-card:nth-child(6) .thumbnail {
     background-image: url(data:image/png;base64,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);
     background-size: 380px 200px;
     width: 380px;
@@ -827,19 +841,6 @@ a {
 
 */
 
-#movie-card-list .movie-card:nth-child(6) .thumbnail {
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/4D-Chess/4Dchess3.PNG);
-    background-size: 300px 200px;
-    width: 300px;
-    height: 200px;
-}
-
-#movie-card-list .movie-card:nth-child(6):hover .thumbnail{
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/4D-Chess/4dchessgif.gif);
-    background-size: 300px 200px;
-    width: 300px;
-    height: 200px;
-}
 
 
 /*
@@ -861,47 +862,46 @@ a {
 */
 
 
-/*
 #movie-card-list .movie-card:nth-child(8) .thumbnail {
-    background-image: url(https://picsum.photos/300/200/?random);
-    background-size: 300px 200px;
-    width: 300px;
+    background-image: url(https://github.com/BrianSantoso/images/blob/master/Terrain/terrain.png?raw=true);
+    background-size: 250px 200px;
+    width: 250px;
     height: 200px;
 }
-*/
 
-#movie-card-list .movie-card:nth-child(8):hover .thumbnail{
+
+/* #movie-card-list .movie-card:nth-child(8):hover .thumbnail{
     background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/Terrain/test45.gif);
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
-}
+} */
 
 #movie-card-list .movie-card:nth-child(9) .thumbnail {
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
+    background-size: 278px 200px;
+    width: 278px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(9):hover .thumbnail{
+    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
+    background-size: 278px 200px;
+    width: 278px;
+    height: 200px;
+}
+
+#movie-card-list .movie-card:nth-child(10) .thumbnail {
     background-image: url('https://raw.githubusercontent.com/BrianSantoso/images/master/PS4/topdowntilebasedimg.png');
     background-size: 300px 200px;
     width: 300px;
     height: 200px;
 }
 
-#movie-card-list .movie-card:nth-child(9):hover .thumbnail{
+#movie-card-list .movie-card:nth-child(10):hover .thumbnail{
     background-image: url('https://github.com/BrianSantoso/images/blob/master/PS4/topdowntilebasedgif2.gif?raw=true');
     background-size: 300px 200px;
     width: 300px;
-    height: 200px;
-}
-
-#movie-card-list .movie-card:nth-child(10) .thumbnail {
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
-    background-size: 278px 200px;
-    width: 278px;
-    height: 200px;
-}
-
-#movie-card-list .movie-card:nth-child(10):hover .thumbnail{
-    background-image: url(https://raw.githubusercontent.com/BrianSantoso/images/master/astar.png);
-    background-size: 278px 200px;
-    width: 278px;
     height: 200px;
 }
 
@@ -1658,7 +1658,6 @@ blockquote .quote:after {
 */
 
 .plaintext {
-    
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
     color: #212529;
@@ -1667,6 +1666,19 @@ blockquote .quote:after {
     margin: 0 auto;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.button-show {
+    text-decoration: underline;
+    color: #6495ED;
+}
 
 
 
