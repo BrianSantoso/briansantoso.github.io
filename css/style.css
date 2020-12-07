@@ -411,7 +411,7 @@ footer p {
 /*    height: auto;*/
 /*    height: 600px;*/
     padding-top: 25px;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
     text-align: center;
     min-height 160px;
     
@@ -1678,6 +1678,17 @@ blockquote .quote:after {
 .button-show {
     text-decoration: underline;
     color: #6495ED;
+}
+
+.icons {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icons > a {
+    margin: 0 5px;
 }
 
 

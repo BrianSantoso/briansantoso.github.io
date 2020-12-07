@@ -15,6 +15,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/social-circles.min.css">
     </head>
     
     <body>
@@ -78,9 +79,17 @@
             <div class="inlineBlock verticalAlignMiddle textAlignLeft col-md-6">
                 <div class="animatedFadeIn fadeInDown">
                     <span class="text">
-                        Hi! I'm an undergraduate student at UC Berkeley and a Freelance and Open Source developer. I love making things. Whether it's computer graphics, software engineering, machine learning, or math, I'm all in!
+                        Hi! I'm an undergraduate student at UC Berkeley and an Open Source developer. I love making things. Whether it's computer graphics, software engineering, machine learning, or math, I'm all in!
                     </span>
+                    <!-- <div class="col-xs-12" style="height:5vh;"></div> -->
+                    <!-- <div class="icons">
+                        <a class="icon-github social-button borderless static" href="https://github.com/BrianSantoso" target="_blank"></a>
+                    </div> -->
                 </div>
+            </div> 
+            <!-- <div class="col-xs-12" style="height:1em;"></div> -->
+            <div class="icons">
+                <a class="icon-github social-button borderless static" href="https://github.com/BrianSantoso" target="_blank"></a>
             </div>
         </div>
 
@@ -294,8 +303,7 @@
                 <p class="plaintext">
                     <span class='bold'>CS61A</span>  Structure and Interpretation of Computer Programs [Python], 
                     <span class='bold'>CS61B</span>  Data Structures and Algorithms [Java], 
-                    <span class='bold'>CS70</span>  CS70 Discrete Mathematics and Probability Theory, 
-                    <span class='bold'>CS61A</span>  Structure and Interpretation of Computer Programs [Python], 
+                    <span class='bold'>CS70</span>  Discrete Mathematics and Probability Theory, 
                     <span class='bold'>Math54</span>  Linear Algebra and Differential Equations
                     <a id='hide' class='button-show' onclick='hide("courses");'><span class='button-show'>Hide</span></a>
                 </p>
@@ -420,7 +428,10 @@
         <div style="text-align: center">
             <h1 class="sectionHeader" style="text-transform: none;"> Contact Me! </h1>
         </div>
-        
+        <div class="icons">
+            <a class="icon-github social-button borderless static" href="https://github.com/BrianSantoso" target="_blank"></a>
+            <a class="icon-linkedin social-button borderless static" href="https://www.linkedin.com/in/briansantoso/" target="_blank"></a>
+        </div>
         <div class="contact content-body">
             <form method="POST" action="https://formspree.io/brian.santoso@berkeley.edu">
                 <input type="hidden" name="_subject" value="Contact request from personal website">
