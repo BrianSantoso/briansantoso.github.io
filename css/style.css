@@ -974,7 +974,7 @@ a {
 	padding-right: 1em;
 	
 	& .movie-title {
-		color: #ffffff;
+		color: black;
 		margin-bottom: .25em;
 		opacity: .75;
 	}
@@ -1237,7 +1237,8 @@ a {
 }
 
 .slideInLeft {
-    animation: slideInLeft 1000ms;
+    /* Animation Disabled */
+    /* animation: slideInLeft 1000ms; */
 }
 
 @keyframes scaleYIn { 
